@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orula - Visuales GPU</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div id="container">
+    <canvas id="canvas"></canvas>
+
+    <!-- Overlay HUD inicial -->
+    <div id="hud-overlay" class="hud-visible">
+      <div class="hud-card">
+        <div class="hud-meta">
+          <span class="track-tag">CANCIÓN SELECCIONADA</span>
+          <h1 class="track-title">ORULA</h1>
+          <p class="track-artist">Víctor Mendívil // Bio-Morph Pipeline</p>
+        </div>
+        
+        <div class="hud-controls">
+          <button id="playBtn" class="hud-btn primary">
+            <span class="btn-icon">▶</span> INICIAR EXPERIENCIA
+          </button>
+        </div>
+
+        <div class="hud-tips">
+          <span>[P] Pantalla completa</span>
+          <span>[O] Pausar / Reanudar audio</span>
+          <span>[Clic/Drag] Vórtice táctil</span>
+          <span>[Golpes de ritmo] Mutación celular aleatoria</span>
+        </div>
+      </div>
+    </div>
+
+    <audio id="audioTrack" preload="auto" loop playsinline></audio>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
